@@ -71,18 +71,16 @@ a{
 }
 
 .inlblk{
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
 }
 
 .inlblk li{
-    display: inline-block;
+    display: block;
+    text-align: center;
     opacity: 50%;
     font-size: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
     filter: grayscale();
 }
 
