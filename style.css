@@ -1,6 +1,7 @@
 body{
-    color: gray;
+    color: rgba(128, 128, 128, 0.75);
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(221, 221, 221);
 }
 
 a{
@@ -15,6 +16,7 @@ a{
 }
 
 .border{
+    background-color: white;
     border-left: solid 1px rgba(128, 128, 128, 0.250);
     border-right: solid 1px rgba(128, 128, 128, 0.250);
     border-bottom: solid 1px rgba(128, 128, 128, 0.250);
@@ -23,10 +25,10 @@ a{
 }
 
 .hdr{
-    opacity: 75%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
 }
 
 .timg{
@@ -42,6 +44,7 @@ a{
     font-size: 20px;
     line-height: 1.5em;
 }
+
 
 .pt{
     color: red;
@@ -74,6 +77,8 @@ a{
     display: flex;
     justify-content: space-around;
     padding-inline-start: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .inlblk li{
