@@ -16,7 +16,7 @@ a {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 2px rgba(128, 128, 128, 0.5);
-    padding-bottom: 15px; }
+    padding-bottom: 20px; }
     .container .border border {
       left: solid 1px rgba(128, 128, 128, 0.25);
       right: solid 1px rgba(128, 128, 128, 0.25);
@@ -55,7 +55,7 @@ a {
       justify-content: space-around;
       padding-inline-start: 0px;
       padding-top: 50px;
-      padding-bottom: 50px; }
+      padding-bottom: 30px; }
       .container .border .inlblk li {
         display: block;
         text-align: center;
