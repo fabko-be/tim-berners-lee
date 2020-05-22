@@ -1,0 +1,120 @@
+body {
+    color: rgba($color: rgb(128, 128, 128), $alpha: 0.75);
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba($color: rgb(221, 221, 221), $alpha: 1.0);
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin bdr {
+    border {
+        left: solid 1px rgba($color: rgb(128, 128, 128), $alpha: 0.250);
+        right: solid 1px rgba($color: rgb(128, 128, 128), $alpha: 0.250);
+        bottom: solid 1px rgba($color: rgb(128, 128, 128), $alpha: 0.250);
+    }
+}
+
+.container {
+    display: block;
+    width: 35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+
+    .border {
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 1.0);
+        @include bdr;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px rgba($color: rgb(128, 128, 128), $alpha: 0.5);
+        padding-bottom: 15px;
+
+        &.hdr {
+            text-align: center;
+
+            padding: {
+                left: 20px;
+                right: 20px;
+                top: 20px;
+            }
+
+            a {
+                display: block;
+                opacity: 75%;
+                text-decoration: none;
+                font-weight: bold;
+                width: fit-content;
+                margin: auto;
+                background-color: red;
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .timg {
+                display: block;
+                margin: auto;
+                height: 100px;
+                border-radius: 50%;
+                border: solid 3px rgba($color: rgb(128, 128, 128), $alpha: 0.5);
+            }
+
+            .pt {
+                color: rgba($color: rgb(255, 0, 0), $alpha: 1.0);
+                font-weight: bold;
+            }
+        }
+
+        .pres {
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+
+        .inlblk {
+            display: flex;
+            justify-content: space-around;
+            padding-inline-start: 0px;
+
+            padding: {
+                top: 50px;
+                bottom: 50px;
+            }
+
+            li {
+                display: block;
+                text-align: center;
+                opacity: 50%;
+                font-size: 24px;
+                filter: grayscale(1);
+            }
+        }
+
+        .stfilm {
+            padding-top: 50px;
+            text-align: center;
+            opacity: 75%;
+        }
+
+        .film img {
+            max-height: 50%;
+            margin-top: 50px;
+            margin-left: 25px;
+        }
+
+        .desc {
+            text-align: justify;
+            opacity: 75%;
+            font-size: 20px;
+            line-height: 1.5em;
+            padding-left: 20px;
+            padding-right: 25px;
+            margin-top: 50px;
+
+            .tt {
+                text-align: center;
+            }
+        }
+    }
+}
